@@ -29,10 +29,4 @@ function mapDispatchToProps(dispatch) {
   )
 }
 
-function mapStateToProps(state) {
-  return {
-    activeCity: state.activeCity
-  }
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(City);
+export default connect(null, mapDispatchToProps)(City);
