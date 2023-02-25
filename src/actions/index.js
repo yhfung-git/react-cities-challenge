@@ -10,7 +10,7 @@ export function setCities() {
 
 export function setActiveCity(city) {
   return {
-    type: 'SELCT_CITY',
+    type: 'SET_ACTIVE_CITY',
     payload: city
   }
 }

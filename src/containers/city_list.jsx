@@ -4,6 +4,7 @@ import { bindActionCreators } from "redux";
 
 import { setCities } from '../actions';
 import City from './city';
+import ActiveCity from './active_city';
 
 class CityList extends Component {
   componentDidMount() {
