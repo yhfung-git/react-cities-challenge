@@ -1,4 +1,5 @@
-// TODO: add and export your own actions
+export const SET_ACTIVE_CITY = "SET_ACTIVE_CITY";
+export const SET_CITIES = "SET_CITIES";
 // import cities from '../data/cities';
 
 // export function setCities() {
@@ -8,7 +9,6 @@
 //   }
 // }
 
-export const SET_ACTIVE_CITY = "SET_ACTIVE_CITY";
 export function setActiveCity(city) {
   return {
     type: SET_ACTIVE_CITY,
@@ -16,7 +16,6 @@ export function setActiveCity(city) {
   }
 }
 
-export const SET_CITIES = "SET_CITIES";
 export function setCities() {
   const promise = fetch('https://raw.githubusercontent.com/yhfung-git/react-cities-json/main/cities.json')
   .then(response => response.json());
